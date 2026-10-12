@@ -1,0 +1,19 @@
+.wrap {
+  width: 88%; margin: 5px auto 75px; padding: 22px 28px; display: grid;
+  grid-template-columns: 150px 1fr auto auto; gap: 20px; align-items: center;
+  background: var(--primary); color: #fff; border-radius: 10px; position: relative; overflow: hidden;
+}
+.wrap::after { content:""; position:absolute; width:250px;height:250px;border:1px solid rgba(255,255,255,.15);border-radius:50%;right:-80px;top:-90px; }
+.offer { background: var(--offer); color: var(--navy); padding: 9px 13px; border-radius: 7px; display:grid; grid-template-columns:auto auto; }
+.offer small,.offer span { grid-column:1/-1; font-size:8px; font-weight:800; }
+.offer strong { font-size:32px; line-height:29px; }
+.offer b { font-size:15px; }
+.wrap h3 { margin:0 0 5px; font-size:19px; }
+.wrap p { margin:0; font-size:11px; }
+.action { display:flex; align-items:center; gap:7px; padding:11px 15px; border:1px solid rgba(255,255,255,.65); border-radius:7px; font-size:11px; position:relative; z-index:2; transition:transform .25s ease; }
+.action:hover { transform:translateY(-3px); }
+.action span { display:grid; }
+.action small { font-size:8px; }
+.whatsapp { background:#0ca54b; border-color:#0ca54b; }
+@media (max-width: 900px) { .wrap { grid-template-columns:130px 1fr; } .action { justify-content:center; } }
+@media (max-width: 600px) { .wrap { width:92%; grid-template-columns:1fr; padding:22px; } }

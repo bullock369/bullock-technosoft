@@ -1,0 +1,14 @@
+.services { padding:80px 0; background:var(--light); }
+.grid { margin-top:30px; display:grid; grid-template-columns:repeat(4,1fr); gap:18px; }
+.card { background:#fff; border:1px solid var(--border); border-radius:11px; padding:22px; animation:revealUp .65s both; }
+.card > div { width:44px;height:44px;border-radius:10px;background:rgba(36,172,183,.1);color:var(--primary);display:grid;place-items:center; }
+.card h3 { font-size:14px; margin:13px 0 7px; }
+.card p { color:var(--muted); font-size:10px; line-height:1.5; margin:0; }
+.contactStrip { padding:32px 6%; background:var(--navy); color:#fff; display:flex; align-items:center; gap:12px; }
+.contactStrip > div { margin-right:auto; }
+.contactStrip h2 { margin:0 0 5px; font-size:21px; }
+.contactStrip p { margin:0; color:#b9ccd5; font-size:11px; }
+.contactStrip a { display:flex;align-items:center;gap:7px;border:1px solid rgba(255,255,255,.5);padding:11px 15px;border-radius:7px;font-size:11px;transition:transform .25s ease,background .25s ease; }
+.contactStrip a:hover { transform:translateY(-3px);background:rgba(255,255,255,.08); }
+@media (max-width:850px) { .grid { grid-template-columns:1fr 1fr; } }
+@media (max-width:650px) { .grid { grid-template-columns:1fr; } .contactStrip { flex-direction:column; text-align:center; } .contactStrip > div { margin-right:0; } }

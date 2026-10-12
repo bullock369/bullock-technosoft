@@ -1,0 +1,8 @@
+.section { padding-top: 15px; }
+.heading { text-align:center; }
+.grid { margin-top:28px; display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+.card { padding:24px; border:1px solid var(--border); border-radius:11px; animation:revealUp .7s both; }
+.stars { color:var(--primary); display:flex; gap:2px; }
+.card p { color:var(--muted); font-size:13px; line-height:1.7; min-height:62px; }
+.card b { font-size:11px; }
+@media (max-width:650px) { .grid { grid-template-columns:1fr; } }

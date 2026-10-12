@@ -1,0 +1,14 @@
+.hero {
+  min-height: 330px; display: flex; align-items: center; color: #fff;
+  background-color: var(--navy); background-size: cover; background-position: center;
+  position: relative; overflow: hidden;
+}
+.hero::after {
+  content: ""; position: absolute; width: 250px; height: 250px; border-radius: 50%;
+  border: 1px solid rgba(36,172,183,.25); right: 8%; top: 30px; animation: float 5s ease-in-out infinite;
+}
+.content { max-width: 750px; padding: 65px 0; position: relative; z-index: 2; animation: revealUp .8s both; }
+.content h1 { margin: 9px 0 12px; font-size: clamp(35px,5vw,52px); line-height: 1.05; }
+.content p { max-width: 670px; color: #d3e0e5; line-height: 1.7; font-size: 14px; }
+.breadcrumb { display: flex; gap: 9px; margin-top: 25px; color: #aac1ca; font-size: 11px; }
+.breadcrumb a { color: var(--primary); }

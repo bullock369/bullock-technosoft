@@ -1,0 +1,28 @@
+{
+  "name": "bullock-technosoft-full-site",
+  "version": "1.0.0",
+  "description": "Theme: - Primary: #24ACB7 - Navy: #062238 - Offer: #FFD21A",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lucide-react": "^1.33.0",
+    "next": "^16.3.2",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "26.2.0",
+    "@types/react": "19.2.18",
+    "typescript": "7.0.2"
+  }
+}

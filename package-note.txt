@@ -1,0 +1,2 @@
+Required packages:
+npm i lucide-react

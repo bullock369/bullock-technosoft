@@ -1,0 +1,5 @@
+.section { padding:32px 6%; display:flex; align-items:center; gap:13px; background:var(--navy); color:#fff; }
+.section > div { margin-right:auto; }
+.section h2 { margin:0 0 4px; font-size:20px; }
+.section p { margin:0; color:#b9ccd5; font-size:11px; }
+@media (max-width:650px) { .section { flex-direction:column; text-align:center; align-items:stretch; } .section > div { margin-right:0; } }
