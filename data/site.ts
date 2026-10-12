@@ -67,7 +67,7 @@ export const services = [
   {
     title: "AMC & Maintenance",
     icon: Wrench,
-    image: "https://images.unsplash.com/photo-1581091870622-3d5f2a9f8b0b?auto=format&fit=crop&w=1000&q=85",
+    image: "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=1000&q=85",
     text: "Regular preventive maintenance plans for computers, CCTV and IT infrastructure.",
     items: ["Scheduled Visits", "CCTV Checkup", "Computer Maintenance", "Backup Check", "Network Check", "Priority Support"],
   },

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { MapPin, MessageCircle, Phone } from "lucide-react";
 import { COMPANY, phoneHref } from "../../lib/constants";
 import styles from "./Footer.module.css";
+import { FaFacebookF, FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa";
 
 export function Footer() {
   const serviceLinks = [
@@ -15,12 +16,26 @@ export function Footer() {
     <>
       <footer className={styles.footer}>
         <div className={styles.brand}>
-          <Link href="/" className={styles.logo}>
-            <span className={styles.logoMark}>BT</span>
-            <span><b>Bullock</b><strong>TechnoSoft</strong><small>Technology You Can Trust</small></span>
-          </Link>
+           <Link
+  href="/"
+  className={styles.logo}
+>
+  <img
+    src="/logo.png"
+    alt="Bullock TechnoSoft Logo"
+    width="160"
+    height="45"
+  />
+</Link>
           <p>Reliable computer, laptop, CCTV, networking and website solutions for homes, shops and offices.</p>
-          <div className={styles.social}><span>f</span><span>◎</span><span>▶</span><span>◉</span></div>
+          
+          <div className={styles.social}>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"> <FaFacebookF /></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><FaInstagram /></a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><FaYoutube /></a>
+            <a href="https://wa.me/919998829141" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><FaWhatsapp /></a>
+          </div>
+
         </div>
 
         <div className={styles.col}>

@@ -14,12 +14,12 @@
 .logo strong { color: var(--primary); }
 .logo small { display: block; font-size: 7px; }
 .social { display: flex; gap: 8px; margin-top: 18px; }
-.social span {
+.social a {
   width: 29px; height: 29px; border: 1px solid rgba(255,255,255,.2); border-radius: 50%;
-  display: grid; place-items: center; color: #b9d1d9; font-size: 11px;
+  display: grid; place-items: center; color: #b9d1d9; font-size: 14px;
   transition: transform .25s ease, background .25s ease, color .25s ease;
 }
-.social span:hover { transform: translateY(-4px); background: var(--primary); color: #fff; }
+.social a:hover { transform: translateY(-4px); background: var(--primary); color: #fff; }
 .col { display: flex; flex-direction: column; gap: 10px; font-size: 13px; }
 .col h4 { margin: 0 0 6px; color: #fff; font-size: 13px; }
 .col a,.col span { color: #9fb7c1; display: flex; align-items: center; gap: 7px; transition: color .2s ease, transform .2s ease; }

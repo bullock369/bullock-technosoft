@@ -1,10 +1,11 @@
- "use client";
+"use client";
 
 import Link from "next/link";
 import { Menu, MessageCircle, Phone, X } from "lucide-react";
 import { useState } from "react";
 import { COMPANY, phoneHref } from "../../lib/constants";
 import styles from "./Header.module.css";
+import { FaFacebookF, FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa";
 
 const links = [
   ["/", "Home"],
@@ -23,18 +24,35 @@ export function Header() {
       <div className={styles.topbar}>
         <span>◷ Mon - Sat: 10:00 AM - 8:00 PM</span>
         <span>Ahmedabad, Gujarat</span>
-        <span className={styles.follow}>Follow Us:　f　◎　▶　◉</span>
+
+        <div className={styles.follow}>
+          <span>Follow Us:</span>
+
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><FaFacebookF /></a>
+
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><FaInstagram /></a>
+
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><FaYoutube /></a>
+
+          <a href="https://wa.me/919998829141" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><FaWhatsapp /></a>
+        </div>
+
+        {/* <span className={styles.follow}>Follow Us:　f　◎　▶　◉</span> */}
       </div>
 
       <header className={styles.header}>
-        <Link href="/" className={styles.logo} onClick={() => setOpen(false)}>
-          <span className={styles.logoMark}>BT</span>
-          <span>
-            <b>Bullock</b>
-            <strong>TechnoSoft</strong>
-            <small>Technology You Can Trust</small>
-          </span>
+        <Link
+          href="/"
+          className={styles.logo}
+          onClick={() => setOpen(false)}
+        >
+          <img
+            src="/logo.png"
+            alt="Bullock TechnoSoft Logo"
+          />
+
         </Link>
+
 
         <nav className={styles.nav}>
           {links.map(([href, label]) => (
@@ -61,9 +79,9 @@ export function Header() {
         {links.map(([href, label]) => (
           <Link key={href} href={href} onClick={() => setOpen(false)}>{label}</Link>
         ))}
-        <a href={phoneHref} onClick={() => setOpen(false)}><Phone size={16}/> Call {COMPANY.phone}</a>
+        <a href={phoneHref} onClick={() => setOpen(false)}><Phone size={16} /> Call {COMPANY.phone}</a>
         <a href={COMPANY.whatsapp} target="_blank" rel="noreferrer" onClick={() => setOpen(false)}>
-          <MessageCircle size={16}/> WhatsApp Us
+          <MessageCircle size={16} /> WhatsApp Us
         </a>
       </div>
     </>
